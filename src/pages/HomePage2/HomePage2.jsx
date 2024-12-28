@@ -6,7 +6,7 @@ import LearnLanguage from './LearnLanguage'
 import Courselist from '../../components/CourseList/Courselist'
 import WhyWeStandOut from './WhyWeStandOut'
 import styles from "../HomePage2/HomePage2.module.css";
-import LanguageComponent from '../../components/LanguageComponent/LanguageComponent'
+import LanguageComponent from './LanguageComponent/LanguageComponent'
 
 
 function HomePage2() {
