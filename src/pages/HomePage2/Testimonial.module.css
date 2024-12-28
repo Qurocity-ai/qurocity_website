@@ -1,0 +1,156 @@
+.Testimonialcontainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.left_Container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 50%;
+    margin-left: 4rem;
+}
+
+.card {
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card_img img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.card_body p {
+    font-size: 0.8rem;
+    color: #00046C;
+    margin: 10px 0;
+}
+
+.card_body h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00046C;
+}
+
+.card_body span {
+    font-size: 1rem;
+    color: #00046C;
+}
+
+.right_Container {
+    flex: 1;
+    text-align: justify;
+    margin-right: 4rem;
+}
+
+.right_Container h3 {
+    font-size: 1rem;
+    
+    color: #00046C;
+}
+
+.right_Container iframe {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Testimonialcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_Container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .right_Container {
+        margin-right: 0;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .right_Container iframe {
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 200px;
+        padding: 0.8rem;
+    }
+
+    .card_img img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card_body p {
+        font-size: 0.7rem;
+    }
+
+    .card_body h4 {
+        font-size: 1rem;
+    }
+
+    .card_body span {
+        font-size: 0.9rem;
+    }
+
+    .right_Container h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Testimonialcontainer {
+        flex-direction: column-reverse;
+        /* Reorder the containers */
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .right_Container {
+        /* order: -1; */
+        /* Moves the video container to the top */
+        margin-bottom: 2rem;
+    }
+
+    .left_Container {
+        margin-top: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .right_Container iframe {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}

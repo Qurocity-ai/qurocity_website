@@ -1092,6 +1092,9 @@ function Newcover() {
             </div>
           </div>
 
+
+
+
           {/* 11 foreign languages */}
           <div>
             <div className={newcover.foreignContainer}>

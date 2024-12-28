@@ -6,6 +6,7 @@ import Footer2 from "../../components/Footer/Footer2";
 import { useEffect } from "react";
 
 import { Helmet } from "react-helmet";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 function Aboutus() {
   useEffect(() => {
@@ -60,7 +61,8 @@ function Aboutus() {
       </Helmet>
 
       {/* <Covernav /> */}
-      <Newnavbar />
+      {/* <Newnavbar /> */}
+      <Navbar2/>
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>

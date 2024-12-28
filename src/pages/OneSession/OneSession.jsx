@@ -35,6 +35,7 @@ import CounsellingForm from "../../components/CounsellingForm/CounsellingForm";
 
 import { FaCheckCircle } from "react-icons/fa"; // Example for vector icons
 import CurriculumSection from "../../components/CurriculumSection/CurriculumSection";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 function OneSession() {
   // pop up
@@ -159,7 +160,10 @@ function OneSession() {
       </Helmet>
 
       <div>
-        <Newnavbar className={newcover.newnewnav} />
+        {/* <Newnavbar className={newcover.newnewnav} /> */}
+        
+        <Navbar2/>
+
         {/* cover page  */}
         <div className={newcover.covernewdiv}>
           <div className={newcover.coverleftnewside}>

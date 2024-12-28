@@ -8,9 +8,10 @@ import { ThemeProvider } from '@material-tailwind/react'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ProgressBar/>
-    <AnimCursor/>
+    {/* <ProgressBar/> */}
+    {/* <AnimCursor/> */}
     <ThemeProvider>
+      
     <App />
     </ThemeProvider>
   </React.StrictMode>,

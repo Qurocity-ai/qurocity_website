@@ -54,11 +54,16 @@ import OneSession from './pages/OneSession/OneSession';
 import ReviewSession from './components/ReviewSession/ReviewSession';
 import Thankyou from './pages/Thankyou/Thankyou';
 import DownloadMarkettingLeads from './pages/DownloadMarkettingLeads/DownloadMarkettingLeads';
+import HomePage2 from './pages/HomePage2/HomePage2';
 
 
 export default (
     <Routes>
-        <Route index element={<Newcover/>} />
+
+{/* {/* we are addomg new Homepag} */} 
+ 
+       <Route index element={<HomePage2/>}/>
+        {/* <Route index element={<Newcover/>} /> */}
         <Route path="/one-on-one-session" element={<OneSession/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/contactus" element={<Contact/>} />

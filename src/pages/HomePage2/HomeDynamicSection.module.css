@@ -1,0 +1,111 @@
+/* HomeDynamicSection.module.css */
+
+.contener {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.leftSection {
+    margin-left: 7rem;
+    width: 40%;
+    /* background-color: #E3E3E3; */
+    /* border: 1px solid red; */
+}
+
+.leftSection h3 {
+    color: #00046C;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.leftItem p {
+    color: #00046C;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0.5rem;
+}
+
+.leftItem {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 70px;
+    gap: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #504f4f;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+}
+
+.active {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 2px;
+}
+
+.rightSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+    margin-right: 7rem;
+    /* border: 1px solid red; */
+}
+
+.rightSection img {
+    width: 15rem;
+}
+
+.rightSection p {
+    color: #00046C;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .contener {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSection {
+        order: -1;
+        margin-right: 0;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .rightSection img {
+        width: 12rem;
+    }
+
+    .leftSection {
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rightSection img {
+        width: 10rem;
+    }
+
+    .rightSection p {
+        font-size: 0.7rem;
+    }
+
+    .leftItem p {
+        font-size: 0.9rem;
+    }
+
+    .leftSection h3 {
+        font-size: 0.9rem;
+    }
+}

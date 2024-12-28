@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import { useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import config from "../../services/config"; // Adjust the path to your config file

@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import config from "../../services/config";
 import { Helmet } from "react-helmet";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 function Account() {
   const [formData, setFormData] = useState({
@@ -104,7 +105,8 @@ function Account() {
         </script>
       </Helmet>
 
-      <Newnavbar />
+      {/* <Newnavbar /> */}
+      <Navbar2/>
 
       <div className={acc.container}>
         <h1 className={acc.heading}>Account Deletion Privacy Policy</h1>
