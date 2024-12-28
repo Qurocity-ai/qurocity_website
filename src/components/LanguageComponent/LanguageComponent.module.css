@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: linear-gradient(#FFEFDD, #FFFFFF);
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #00046c;
+  margin-bottom: 4rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  font-family:Poppins,Sans-serif
+}
+
+.contentContainer {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: auto 3rem;
+  gap: 40px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1;
+  justify-content: left;
+  margin-left: 3rem;
+}
+
+.languageCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  gap: 10px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.languageCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flag img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make the flag circular */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: -10px;
+}
+
+.languageName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00046c;
+  margin-right: 0.5rem;
+  font-family:Poppins,Sans-serif
+}
+
+/* Hover text above card */
+.hoverText {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  font-weight: 600;
+  font-family:Poppins,Sans-serif
+}
+
+.languageCard:hover .hoverText {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px); /* Add a smooth upward animation */
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.hoverHelp {
+  color: #CED0FB;
+  font-size: 1rem;
+  margin-top: -3rem;
+  font-family:Poppins,Sans-serif
+  /* margin-left: -50rem; */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .leftSection {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -3rem;
+    align-items: center;
+  }
+
+  .languageCard {
+    width: fit-content;
+    margin-bottom: -2rem;
+    border-radius: 10px;
+    padding-right: 1rem;
+    margin: auto 1rem;
+  }
+
+  .hoverHelp {
+    display: none;
+  }
+}
