@@ -8,6 +8,7 @@ import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/SpanishCurr";
 import axios from "axios";
 import config from "../../../services/config";
+import Navbar2 from "../../Navbar2/Navbar2";
 
 function Spanish() {
   const [proficiency, setProficiency] = useState("A1");
@@ -200,7 +201,8 @@ function Spanish() {
         </Helmet>
 
         {/* new navbar */}
-        <Newnavbar />
+        {/* <Newnavbar /> */}
+        <Navbar2/>
 
         {/* language cover page */}
         <main className={fr.main}>

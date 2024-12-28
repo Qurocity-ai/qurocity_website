@@ -4,6 +4,7 @@ import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import config from "../../services/config";
 import { Helmet } from "react-helmet";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 function Blogs() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -114,7 +115,9 @@ function Blogs() {
     `}
         </script>
       </Helmet>
-      <Newnavbar />
+      {/* <Newnavbar /> */}
+      <Navbar2/>
+    
       <div className={Blogscss.blogbackground}>
         <div className={Blogscss.blogHeading}>
           <h1>Welcome to the Qurocity Trail!</h1>

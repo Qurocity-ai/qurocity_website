@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import Footer2 from "../../components/Footer/Footer2";
 import Accordian4BecomeTutor from "../../components/Accordian4BecomeTutor";
 import { useEffect } from "react";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 function Becometutor() {
   useEffect(() => {
@@ -71,7 +72,8 @@ Qurocity is the place for you! Join our network of the best language tutors from
       
       </Helmet>
 
-      <Newnavbar />
+      {/* <Newnavbar /> */}
+      <Navbar2/>
       <div>
         {/* become tutor step by step guide */}
         <div className="enroll-container section-1">

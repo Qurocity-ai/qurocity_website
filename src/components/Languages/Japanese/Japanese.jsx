@@ -193,7 +193,8 @@ Join Online Japanese Classes Now!
         </Helmet>
 
         {/* new navbar */}
-        <Newnavbar />
+        {/* <Newnavbar /> */}
+        <Navbar2/>
 
         {/* language cover page */}
         <main className={fr.main}>

@@ -8,6 +8,7 @@ import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/DanishCurr";
 import axios from "axios";
 import config from "../../../services/config";
+import Navbar2 from "../../Navbar2/Navbar2";
 
 function Danish() {
   const [proficiency, setProficiency] = useState("A1");
@@ -204,7 +205,8 @@ Join Online Danish Classes Now!
         </Helmet>
 
         {/* new navbar */}
-        <Newnavbar />
+        {/* <Newnavbar /> */}
+        <Navbar2/>
 
         {/* language cover page */}
         <main className={fr.main}>

@@ -7,6 +7,7 @@ import Footer2 from "../../components/Footer/Footer2";
 import config from '../../services/config';
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 function Contact() {
   const handleSubmit = async (e) => {
@@ -118,7 +119,8 @@ function Contact() {
     `}
         </script>
       </Helmet>
-      <Newnavbar />
+      {/* <Newnavbar /> */}
+      <Navbar2/>
       <div className={Contactcss.contactUs}>
         <div className={Contactcss.contactusDetails}>
           <img

@@ -1,0 +1,116 @@
+.standOutSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftSection {
+    width: 40%;
+    text-align: left;
+}
+
+.leftSection h2 {
+    font-size: 2rem;
+    color: #00046C;
+    margin-bottom: 5rem;
+}
+
+.leftSection img {
+    max-width: 220px;
+    object-fit: contain;
+}
+
+.rightSection {
+    width: 400px;
+    background-color: #2a4d9e;
+    border-radius: 12px;
+    color: white;
+    height: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #3a5cb9;
+    border-radius: 8px;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    padding: 1rem;
+    color: white;
+    height: 100px;
+}
+
+.card h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .standOutSection {
+        flex-direction: column;
+        /* Stack sections vertically */
+        margin: 2rem 1rem;
+        /* Add some margin for better spacing */
+    }
+
+    .leftSection {
+        width: 100%;
+        text-align: center;
+        /* Center-align for smaller screens */
+        margin-bottom: 2rem;
+        /* Add spacing between sections */
+    }
+
+    .rightSection {
+        width: 100%;
+        /* Full width for smaller screens */
+        height: auto;
+        /* Allow height to adjust dynamically */
+        padding: 1rem;
+        /* Add padding for content */
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSection h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .leftSection img {
+        max-width: 180px;
+        margin-left: 4rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+        /* Reduce padding for better fit */
+        height: auto;
+        /* Allow cards to adjust height dynamically */
+    }
+
+    .card h3 {
+        font-size: 0.9rem;
+        /* Slightly larger font size for readability */
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+}
