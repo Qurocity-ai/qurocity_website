@@ -161,6 +161,27 @@
 
     .mobileNav {
         display: flex;
-        flex-direction: column;
+       
+        
     }
+    .languageContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  .dropdownMenu{
+    position: relative;
+  }
+  .LearningCenterContainer{
+    margin-right: 6rem;
+  }
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 7rem;
+  }
 }

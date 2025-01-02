@@ -30,6 +30,9 @@ function Testimonial() {
   ];
 
   return (
+    <>
+    <div className={styles.maincontener}>
+      <h3 style={{textAlign:"center"}}>What Learner's say!</h3>
     <div className={styles.Testimonialcontainer}>
       <div className={styles.left_Container}>
         {testimonials.map((testimonial, index) => (
@@ -58,6 +61,8 @@ function Testimonial() {
         ></iframe>
       </div>
     </div>
+      </div>
+    </>
   );
 }
 

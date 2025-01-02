@@ -55,6 +55,7 @@ import ReviewSession from './components/ReviewSession/ReviewSession';
 import Thankyou from './pages/Thankyou/Thankyou';
 import DownloadMarkettingLeads from './pages/DownloadMarkettingLeads/DownloadMarkettingLeads';
 import HomePage2 from './pages/HomePage2/HomePage2';
+import MultiStepQuiz from './pages/MultiStepQuizPage/MultiStepQuiz';
 
 
 export default (
@@ -63,6 +64,7 @@ export default (
 {/* {/* we are addomg new Homepag} */} 
  
        <Route index element={<HomePage2/>}/>
+        <Route path='/details' element={<MultiStepQuiz/>}/>
         {/* <Route index element={<Newcover/>} /> */}
         <Route path="/one-on-one-session" element={<OneSession/>} />
         <Route path="/aboutus" element={<Aboutus/>} />

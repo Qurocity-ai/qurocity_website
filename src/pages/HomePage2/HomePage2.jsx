@@ -7,6 +7,9 @@ import Courselist from '../../components/CourseList/Courselist'
 import WhyWeStandOut from './WhyWeStandOut'
 import styles from "../HomePage2/HomePage2.module.css";
 import LanguageComponent from './LanguageComponent/LanguageComponent'
+import Footer from '../../components/Footer/Footer2'
+import CounsellingForm from '../../components/CounsellingForm/CounsellingForm'
+import FAQ from './FAQ'
 
 
 function HomePage2() {
@@ -20,6 +23,9 @@ function HomePage2() {
       <Testimonial />
       <WhyWeStandOut />
       <Courselist />
+      <FAQ/>
+      <CounsellingForm />
+      <Footer/>
     </div>
   )
 }

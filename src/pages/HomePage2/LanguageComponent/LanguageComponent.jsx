@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./LanguageComponent.module.css";
-
+import { useNavigate } from "react-router-dom";
 const languages = [
   {
     name: "English",
@@ -42,6 +42,14 @@ const languages = [
 const LanguageComponent = () => {
   const [hoveredLanguage, setHoveredLanguage] = useState("");
 
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate(`/details`);
+  }
+
+
+
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>
@@ -66,6 +74,7 @@ const LanguageComponent = () => {
               className={styles.languageCard}
               onMouseEnter={() => setHoveredLanguage(lang.description)}
               onMouseLeave={() => setHoveredLanguage("")}
+              onClick={handleNavigation}
             >
               {hoveredLanguage === lang.description && (
                 <div className={styles.hoverText}>{hoveredLanguage}</div>
