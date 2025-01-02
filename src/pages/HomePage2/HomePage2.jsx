@@ -15,8 +15,9 @@ function HomePage2() {
       <Navbar2/>
       <LanguageComponent/>
       <HomeDynamicSection/>
-      <Testimonial/>
+   
       <LearnLanguage/>
+      <Testimonial />
       <WhyWeStandOut />
       <Courselist />
     </div>
