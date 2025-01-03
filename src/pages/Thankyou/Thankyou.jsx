@@ -4,6 +4,7 @@ import not from "./Thankyou.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import { Helmet } from "react-helmet";
+import Navbar2 from "../../components/Navbar2/Navbar2";
 
 const Thankyou = ({ message = "Thank You for Registering!" }) => {
 //   useEffect(() => {
@@ -47,7 +48,7 @@ useEffect(() => {
       `}
         </script>
       </Helmet>
-      <Newnavbar />
+      <Navbar2/>
 
       <div className={not.error_page}>
         <div className={not.container1}>

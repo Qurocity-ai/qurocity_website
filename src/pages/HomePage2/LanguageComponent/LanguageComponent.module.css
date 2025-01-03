@@ -10,8 +10,8 @@
 .heading {
   font-size: 1.8rem;
   color: #00046c;
-  margin-bottom: 4rem;
-  font-weight: bold;
+  margin-bottom: 1rem;
+  /* font-weight: bold; */
   margin-top: 3rem;
   font-family:Poppins,Sans-serif
 }

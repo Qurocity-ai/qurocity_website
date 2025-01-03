@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate, Link } from 'react-router-dom';
 import styles from "../../pages/MultiStepQuizPage/MultiStepQuiz.module.css";
-import { Link } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 function MultiStepQuiz() {
+  const navigate = useNavigate();
   const questions = [
     {
       id: 1,
@@ -74,6 +77,7 @@ function MultiStepQuiz() {
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentDetailIndex, setCurrentDetailIndex] = useState(0);
+  const [errorMessage,setErrorMessage] = useState("");
 
   const handleOptionClick = (name, value) => {
     if (questions[currentQuestionIndex].type === "checkbox") {
@@ -94,15 +98,26 @@ function MultiStepQuiz() {
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length) {
-      const currentQuestion = questions[currentQuestionIndex];
-      const answer = formData[currentQuestion?.name];
 
+    const currentQuestion = questions[currentQuestionIndex];
+    const selectedOption = formData[currentQuestion.name];
+
+    if (currentQuestionIndex < questions.length && !selectedOption) {
+      setErrorMessage("Please select an option before proceeding.");
+      return;
+    }
+
+    setErrorMessage("");
+
+
+    if (currentQuestionIndex < questions.length) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else if (currentDetailIndex < 1) {
       setCurrentDetailIndex(currentDetailIndex + 1);
     }
   };
+
+
 
   const handleBack = () => {
     if (currentDetailIndex > 0) {
@@ -138,8 +153,14 @@ function MultiStepQuiz() {
       body: JSON.stringify(payload),
     })
       .then((response) => response.json())
-      .then((data) => console.log("Success:", data))
-      .catch((error) => console.error("Error:", error));
+      .then((data)=>{
+        if(data.token){
+          localStorage.setItem("token",data.token);
+          navigate("/thankyou");
+        }else{
+          console.log("Token not recevied",data)
+        }
+      })
   };
 
   return (
@@ -155,9 +176,9 @@ function MultiStepQuiz() {
         {currentQuestionIndex < questions.length && (
           <div className={styles.card}>
             <h2>{questions[currentQuestionIndex].label}</h2>
+              {errorMessage && <p className={styles.error}>{errorMessage}</p>}
             <div className={styles.optionsContainer}>
-              {questions[currentQuestionIndex].type === "select" ||
-                questions[currentQuestionIndex].type === "checkbox"
+              {questions[currentQuestionIndex].type === "select"
                 ? questions[currentQuestionIndex].options.map((option, index) => (
                   <button
                     type="button"
@@ -169,7 +190,10 @@ function MultiStepQuiz() {
                       handleOptionClick(questions[currentQuestionIndex].name, option)
                     }
                   >
-                    {option}
+                  
+                      {option}
+                  
+                   
                   </button>
                 ))
                 : null}
@@ -232,8 +256,10 @@ function MultiStepQuiz() {
                 onClick={handleBack}
                 className={styles.navigationButton}
               >
-                &#8592;
+                  {/* <FaArrowLeft size={30}/> */}
+                  &#8592;
               </button>
+              
             )}
           </div>
           <div className={styles.nextContainer}>
@@ -247,7 +273,8 @@ function MultiStepQuiz() {
                 onClick={handleNext}
                 className={styles.navigationButton}
               >
-                &#8594;
+                    &#8594;
+                    {/* <FaArrowRight size={30}/> */}
               </button>
             )}
           </div>

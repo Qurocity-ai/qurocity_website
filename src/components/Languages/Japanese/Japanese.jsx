@@ -8,6 +8,7 @@ import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/JapaneseCurr";
 import axios from "axios";
 import config from "../../../services/config";
+import Navbar2 from "../../Navbar2/Navbar2";
 
 function Japanese() {
   const [proficiency, setProficiency] = useState("A1");

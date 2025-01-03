@@ -94,7 +94,7 @@ const Navbar2 = () => {
           </li>
 
           <li><Link to="/blogs">Blogs</Link></li>
-          <li><Link to="/becometutor">Meet The Tutors</Link></li>
+          <li style={{whiteSpace:"nowrap"}}><Link to="/becometutor">Meet  The  Tutors</Link></li>
           <li><Link to="/aboutus">About Us</Link></li>
           <li><Link to="/one-on-one-session">1:1 Session</Link></li>
         </div>

@@ -8,8 +8,8 @@
     font-family: "Poppins", sans-serif;
     top: 0;
     z-index: 1000;
-    background: rgb(255, 239, 221);
-        background: linear-gradient(180deg, rgba(255, 239, 221, 1) 100%, rgba(255, 255, 255, 1) 0%);
+    /* background: rgb(255, 239, 221); */
+    background: linear-gradient(180deg, rgba(255, 239, 221, 1) 100%, rgba(255, 255, 255, 1) 0%);
 }
 
 .logo {
@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
-    margin-right: 13rem;
+    margin-right: 11rem;
 }
 
 .learningCenter {
@@ -171,10 +171,10 @@
         align-items: center;
     }
   .dropdownMenu{
-    position: relative;
+    position:relative;
   }
   .LearningCenterContainer{
-    margin-right: 6rem;
+    margin-right: 8rem;
   }
   .dropdown{
     display: flex;
