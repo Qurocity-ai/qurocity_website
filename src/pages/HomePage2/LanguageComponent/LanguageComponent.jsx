@@ -52,22 +52,27 @@ const LanguageComponent = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>
-        WHICH{" "}
-        <span
-          style={{
-            color: "red",
-          }}
-        >
-          LANGUAGE
-        </span>{" "}
-        WOULD YOU LIKE TO LEARN?
-      </h1>
+
 
       <div className={styles.contentContainer}>
 
         {/* left section */}
         <div className={styles.leftSection}>
+
+          <h1 className={styles.heading}>
+            WHICH{" "}
+            <span
+              style={{
+                color: "red",
+              }}
+            >
+              LANGUAGE
+            </span>{" "}
+            WOULD YOU <br></br>LIKE TO LEARN ?
+          </h1>
+
+
+
           {languages.map((lang) => (
             <div
               key={lang.name}
