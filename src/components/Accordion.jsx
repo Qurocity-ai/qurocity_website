@@ -30,6 +30,7 @@ export default function ControlledAccordions() {
     `}
         </script>
       </Helmet>
+
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -51,16 +52,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             When is the best age to start learning foreign languages?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{fontFamily:"Poppins, Sans-serif"}}>
             As is the case with any other language, a person’s age has an effect
             on their ability to learn new ones. But that only means anyone can
             learn – no matter how old or young they are. Kids and young adults
@@ -91,9 +93,10 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Why are online platforms the best medium for learning foreign
@@ -101,7 +104,7 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             The world has gone remote since 2020. Even if the pandemic hadn’t
             struck, it would have been a matter of time before the learning
             journeys went the digital route. Because let’s face it – the future
@@ -133,16 +136,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             But why can’t I just learn foreign languages by myself?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             It is possible to learn a little from various sources around you.
             For example, you may catch up on some phrases from songs you
             listened to or through something someone said during a TV show. To
@@ -175,16 +179,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Does Qurocity cover critical language skills?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             We make sure that you can write, read, listen, and speak the
             language at the end of the course. We offer various proficiency
             levels in each language, but we cover grammar, vocabulary,
@@ -213,16 +218,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             How does Qurocity select language teachers?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             We follow a thorough verification process before onboarding
             teachers, and we have an uncompromising stance on only working with
             native language specialists.
@@ -250,16 +256,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             What would be my tech needs to attend online classes at Qurocity?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             You require a laptop, tablet or mobile phone with a WIFI connection,
             along with a web camera, a microphone, and a speaker.
           </Typography>
@@ -286,16 +293,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             What is the most effective way to attend a session?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             We have found that a laptop or a desktop computer facilitates the
             smoothest learning experience.
           </Typography>
@@ -322,16 +330,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Do you issue a certificate at the end of the course?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             Yes, all our students who complete the course get issued an
             accredited certificate.
           </Typography>
@@ -358,16 +367,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Which Foreign Languages are in demand in India?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             In India, languages like German, Japanese, and French are among the
             highest paid due to the demand for skilled professionals in
             multinational companies and sectors like IT and tourism. Mastering
@@ -397,16 +407,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             What are the benefits of learning a foreign language?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             Learning a foreign language enhances cognitive abilities, improves
             communication skills, and opens up global job opportunities. It also
             allows for deeper cultural understanding and enriches travel
@@ -435,16 +446,17 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Why is language learning important?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{ fontFamily: "Poppins, Sans-serif" }}>
             Language learning is important as it fosters communication and
             understanding across cultures, enhancing personal and professional
             relationships. It also boosts cognitive skills and opens up diverse
@@ -473,9 +485,10 @@ export default function ControlledAccordions() {
             sx={{
               width: "90%",
               flexShrink: 0,
-              fontSize: "1.15rem",
-              fontWeight: "700",
+              fontSize: "1rem",
+              fontWeight: "600",
               color: "#2F327D;",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             What is the easiest way to contact Qurocity?
@@ -489,6 +502,7 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+
     </div>
   );
 }

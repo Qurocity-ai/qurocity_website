@@ -587,7 +587,12 @@
     padding: 20px;
     text-align: center
 }
-
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .container-cards h3 {
     color: #00046c;
     font-family: Raleway, Arial, sans-serif;

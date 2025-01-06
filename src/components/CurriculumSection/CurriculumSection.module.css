@@ -54,7 +54,7 @@
 .curriculumSidebar li {
   cursor: pointer;
   padding: 10px 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   transition: all 0.3s ease;
   position: relative;
   border-radius: 8px; /* Rounded corners for box effect */
@@ -67,6 +67,7 @@
   color: #1a3fb8; /* Text color on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
   transform: translateY(-2px); /* Slight lift on hover */
+      transition: transform 0.3s ease,
 }
 
 /* Active list item style */
@@ -74,7 +75,7 @@
   background-color: #f4a261; /* Highlight background for active item */
   color: #ffffff; /* Text color for active item */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for active item */
-  border: 2px solid #00046c; /* Border to make it more defined */
+ 
   transform: translateY(-2px); /* Slight lift for active item */
 }
 

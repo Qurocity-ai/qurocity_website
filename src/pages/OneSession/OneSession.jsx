@@ -3,7 +3,6 @@ import newcover from "./OneSession.module.css";
 import { Helmet } from "react-helmet";
 import LazyLoad from "react-lazyload";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Courselist from "../../components/CourseList/Courselist";
 import Accordion from "../../components/AccordianSession";
 
 import { useState, useEffect } from "react";
@@ -36,6 +35,7 @@ import CounsellingForm from "../../components/CounsellingForm/CounsellingForm";
 import { FaCheckCircle } from "react-icons/fa"; // Example for vector icons
 import CurriculumSection from "../../components/CurriculumSection/CurriculumSection";
 import Navbar2 from "../../components/Navbar2/Navbar2";
+import FAQ from "../HomePage2/FAQ";
 
 function OneSession() {
   // pop up
@@ -160,9 +160,9 @@ function OneSession() {
       </Helmet>
 
       <div>
-        {/* <Newnavbar className={newcover.newnewnav} /> */}
+        <Newnavbar className={newcover.newnewnav} />
         
-        <Navbar2/>
+        {/* <Navbar2/> */}
 
         {/* cover page  */}
         <div className={newcover.covernewdiv}>
@@ -189,6 +189,7 @@ function OneSession() {
               </p>
             </div>
           </div>
+
           <div className={newcover.covernewrightside}>
             <img
               src="https://res.cloudinary.com/dvk1ynowq/image/upload/v1731586916/design_qw6htq.jpg"
@@ -232,6 +233,8 @@ function OneSession() {
             />
           </div>
         </div>
+        
+{/* This whatsapp Contact which will visible to all pages*/}
 
         <a
           href="https://api.whatsapp.com/send?phone=9373902340&text=Hello%21%20Can you assist me in..."
@@ -250,11 +253,11 @@ function OneSession() {
           </div>
         </a>
 
+
         {/* counselling form */}
         <CounsellingForm />
 
         {/* course list */}
-        {/* <Courselist /> */}
 
 
 
@@ -382,10 +385,12 @@ function OneSession() {
         <CurriculumSection/>
 
         {/* Newsppr section */}
+      
         <div className={newcover.newsppr}>
           <div className={newcover.pprLayout}>
             <h3>Featured in Top Columns</h3>
             {/* TOI */}
+            
             <div className={newcover.pprContent}>
               <div className={newcover.pprLeft}>
                 <img src="/Index/TOI.webp" alt="Featured in Times of India" />
@@ -420,7 +425,9 @@ function OneSession() {
                 </p>
               </div>
             </div>
+
             <hr className={newcover.newsppr_hr} />
+
             {/* Eco Times */}
             <div className={newcover.pprContentRight}>
               <div className={newcover.pprRight}>
@@ -449,7 +456,9 @@ function OneSession() {
                 <img src="/Index/ET.webp" alt="New Featured Image" />
               </div>
             </div>
+
             <hr className={newcover.newsppr_hr} />
+
             {/* ISO certified: */}
             <div className={newcover.iso}>
               <div className={newcover.pprLeft}>
@@ -479,6 +488,7 @@ function OneSession() {
             {/* <hr className={newcover.newsppr_hr} /> */}
           </div>
         </div>
+
 
         {/* sliding languages */}
         {/* <div className="sliding-section">
@@ -660,28 +670,35 @@ function OneSession() {
             </div>
           </div> */}
 
+
+
         {/* wondering how learning */}
         <div className={newcover.wonderingContainer}>
           <h2>
             Wondering how learning a foreign language is going to benefit you ?
           </h2>
+
           <hr />
+
           <div className="container1">
+            {/* card 1 */}
             <div className="container-cards">
-              <LazyLoad offset={100}>
+              {/* <LazyLoad offset={100}> */}
                 <img
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 1.png"
                   alt="Academic Excellance"
                 />
-              </LazyLoad>
+              {/* </LazyLoad> */}
               <h3>Academic Excellence</h3>
               <p>
                 Ace exams like SAT & GRE and outperform the rest in
                 school/college interviews.
               </p>
             </div>
+
+            {/* card  2 */}
             <div className="container-cards">
               <LazyLoad offset={100}>
                 <img
@@ -698,6 +715,8 @@ function OneSession() {
                 international job positions.
               </p>
             </div>
+
+            {/* card 3 */}
             <div className="container-cards">
               <LazyLoad offset={100}>
                 <img
@@ -714,6 +733,8 @@ function OneSession() {
                 conflict management, etc.
               </p>
             </div>
+
+            {/* card 4 */}
             <div className="container-cards">
               <LazyLoad offset={100}>
                 <img
@@ -730,6 +751,7 @@ function OneSession() {
                 overall thinking process.
               </p>
             </div>
+            {/* card 5 */}
             <div className="container-cards">
               <LazyLoad offset={100}>
                 <img
@@ -746,6 +768,7 @@ function OneSession() {
                 manage weaknesses.
               </p>
             </div>
+            {/* card 6 */}
             <div className="container-cards">
               <LazyLoad offset={100}>
                 <img
@@ -762,8 +785,10 @@ function OneSession() {
                 more empathetic.
               </p>
             </div>
+
           </div>
         </div>
+
 
         {/* Why online lang */}
         {/* <div className={newcover.wonderingContainer}>
@@ -1028,7 +1053,7 @@ function OneSession() {
         <Reviewsection />
 
         {/* <!-- FAQ SECTION --> */}
-        <div>
+        {/* <div>
           <div
             className="faqHeadingDivCss"
             style={{
@@ -1052,8 +1077,10 @@ function OneSession() {
               <Accordion />
             </div>
           </div>
-        </div>
+        </div> */}
 
+        {/* This is New FAQ Create by  Yogesh */}
+        <FAQ/>
         {/* counselling form */}
         <CounsellingForm />
 

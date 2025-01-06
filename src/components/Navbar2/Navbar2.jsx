@@ -5,10 +5,15 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar2 = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isDropdownVisible,setIsDropdownVisible] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobile(!isMobile);
   };
+
+  const toggleDropdown = ()=>{
+    setIsDropdownVisible(!isDropdownVisible);
+  }
 
   return (
     <nav className={styles.navbar}>
@@ -23,74 +28,77 @@ const Navbar2 = () => {
 
       <div className={styles.languageContainer}>
           <li className={styles.dropdown}>
-            <span>Languages</span>
-            <div className={styles.dropdownMenu}>
-
-              <button>
-                <Link to="/learnenglish">English</Link>
-              </button>
+            {/* <span>Languages</span> */}
+            <button onClick={toggleDropdown}>Languages</button>
+             {isDropdownVisible&&(
+              <div className={styles.dropdownMenu}>
 
                 <button>
-                <Link to="/learnspanish">Spanish</Link>
+                  <Link to="/learnenglish">English</Link>
                 </button>
-
-             
-              <button>
-                <Link to="/learnfrench">French</Link>
-              </button>
 
                 <button>
-                <Link to="/learngerman">German</Link>
+                  <Link to="/learnspanish">Spanish</Link>
                 </button>
-             
-              <button>
-                <Link to="/learnchinese">Chinese</Link>
-              </button>
-            
+
+
                 <button>
-                <Link to="/learnrussian">Russian</Link>
+                  <Link to="/learnfrench">French</Link>
                 </button>
-                
-         
 
-            <button>
-                <Link to="/learnmandarin">Mandarin</Link>
-            </button>
-   
                 <button>
-                <Link to="/learndutch">Dutch</Link>
+                  <Link to="/learngerman">German</Link>
                 </button>
-              
-          
+
                 <button>
-                <Link to="/learnjapanese">Japanese</Link>
+                  <Link to="/learnchinese">Chinese</Link>
                 </button>
-         
-           
-               <button>
-                <Link to="/learnkorean">Korean</Link>
-               </button>
-             
-               
-             
 
-             <button>
-                <Link to="/learnportuguese">Portuguese</Link>
-             </button>
-              
-              
-           <button>
-                <Link to="/learnarabic">Arabic</Link>
-           </button>
+                <button>
+                  <Link to="/learnrussian">Russian</Link>
+                </button>
 
-            <button>
-                <Link to="/learndanish">Danish</Link>
-            </button>
-                
-              
 
-  
-            </div>
+
+                <button>
+                  <Link to="/learnmandarin">Mandarin</Link>
+                </button>
+
+                <button>
+                  <Link to="/learndutch">Dutch</Link>
+                </button>
+
+
+                <button>
+                  <Link to="/learnjapanese">Japanese</Link>
+                </button>
+
+
+                <button>
+                  <Link to="/learnkorean">Korean</Link>
+                </button>
+
+
+
+
+                <button>
+                  <Link to="/learnportuguese">Portuguese</Link>
+                </button>
+
+
+                <button>
+                  <Link to="/learnarabic">Arabic</Link>
+                </button>
+
+                <button>
+                  <Link to="/learndanish">Danish</Link>
+                </button>
+
+              </div>
+             )}
+
+
+
           </li>
 
           <li><Link to="/blogs">Blogs</Link></li>

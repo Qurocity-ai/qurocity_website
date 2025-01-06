@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 50px 50px 29px 0;
+  /* border: 1px solid red; */
 }
 .covernewdiv1 {
   display: none;
@@ -28,6 +29,7 @@
   flex: 30%;
   display: flex;
   align-items: center;
+  margin-right: 10%;
   justify-content: center;
 }
 .whtsapp_href .whatsapp {
@@ -421,7 +423,9 @@
   margin-top: 5rem;
   text-align: center;
   padding: 1rem 10rem;
+ 
 }
+
 .wonderingContainer h2 {
   font-family: Raleway, Arial, sans-serif;
   color: #00046c;
@@ -651,7 +655,7 @@
 .pprContent,
 .pprContentRight {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 2rem;
@@ -667,11 +671,13 @@
 }
 .pprLeft img {
   border-radius: 10px;
-  width: 30vw;
+  width: 40vw;
   height: 50vh;
+  
 }
 .pprRight {
   margin: 1rem;
+  width: 50%;
 }
 .pprRight p {
   text-align: justify;

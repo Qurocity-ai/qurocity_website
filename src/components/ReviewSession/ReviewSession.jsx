@@ -117,8 +117,8 @@ function ReviewSession() {
     speed: 4000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [

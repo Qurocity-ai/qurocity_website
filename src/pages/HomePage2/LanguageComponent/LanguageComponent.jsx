@@ -58,6 +58,7 @@ const LanguageComponent = () => {
 
         {/* left section */}
         <div className={styles.leftSection}>
+        
 
           <h1 className={styles.heading}>
             WHICH{" "}
@@ -70,27 +71,33 @@ const LanguageComponent = () => {
             </span>{" "}
             WOULD YOU <br></br>LIKE TO LEARN ?
           </h1>
-
-
+          
+         <div className={styles.MyLanguageCard}>
 
           {languages.map((lang) => (
+            
             <div
               key={lang.name}
               className={styles.languageCard}
-              onMouseEnter={() => setHoveredLanguage(lang.description)}
-              onMouseLeave={() => setHoveredLanguage("")}
+              // onMouseEnter={() => setHoveredLanguage(lang.description)}
+              // onMouseLeave={() => setHoveredLanguage("")}
               onClick={handleNavigation}
             >
-              {hoveredLanguage === lang.description && (
+              {/* {hoveredLanguage === lang.description && (
                 <div className={styles.hoverText}>{hoveredLanguage}</div>
-              )}
+              )} */}
 
               <div className={styles.flag}>
                 <img src={lang.flag} alt="" />
+
               </div>
-              <div className={styles.languageName}>{lang.name}</div>
+                <span className={styles.languageName}>{lang.name}</span>
+              {/* <div className={styles.languageName}>{lang.name}</div> */}
             </div>
+        
           ))}
+          </div>
+
 
           <div className={styles.hoverHelp}>
             Need help to pick one? Hover on the language to sneak a little

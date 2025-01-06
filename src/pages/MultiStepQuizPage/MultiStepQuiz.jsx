@@ -77,7 +77,7 @@ function MultiStepQuiz() {
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentDetailIndex, setCurrentDetailIndex] = useState(0);
-  const [errorMessage,setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleOptionClick = (name, value) => {
     if (questions[currentQuestionIndex].type === "checkbox") {
@@ -138,7 +138,7 @@ function MultiStepQuiz() {
         question4: formData.dailyTime,
         question5: formData.learningMethods
       },
-      name:formData.name,
+      name: formData.name,
       email: formData.email,
       password: formData.password,
     };
@@ -153,134 +153,132 @@ function MultiStepQuiz() {
       body: JSON.stringify(payload),
     })
       .then((response) => response.json())
-      .then((data)=>{
-        if(data.token){
-          localStorage.setItem("token",data.token);
+      .then((data) => {
+        if (data.token) {
+          localStorage.setItem("token", data.token);
           navigate("/thankyou");
-        }else{
-          console.log("Token not recevied",data)
+        } else {
+          console.log("Token not recevied", data)
         }
       })
   };
 
   return (
     <>
-     <div className={styles.quizNav}>
-      <Link to="/">
+      <div className={styles.quizNav}>
+        <Link to="/">
           <img src='./Index/logo-footer.png' />
-      </Link>
-       
-     </div>
-    <div className={styles.container}>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        {currentQuestionIndex < questions.length && (
-          <div className={styles.card}>
-            <h2>{questions[currentQuestionIndex].label}</h2>
+        </Link>
+
+      </div>
+      <div className={styles.container}>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          {currentQuestionIndex < questions.length && (
+            <div className={styles.card}>
+              <h2>{questions[currentQuestionIndex].label}</h2>
               {errorMessage && <p className={styles.error}>{errorMessage}</p>}
-            <div className={styles.optionsContainer}>
-              {questions[currentQuestionIndex].type === "select"
-                ? questions[currentQuestionIndex].options.map((option, index) => (
-                  <button
-                    type="button"
-                    key={index}
-                    className={`${styles.option} ${formData[questions[currentQuestionIndex].name].includes(option) &&
-                      styles.selected
-                      }`}
-                    onClick={() =>
-                      handleOptionClick(questions[currentQuestionIndex].name, option)
-                    }
-                  >
-                  
+              <div className={styles.optionsContainer}>
+                {questions[currentQuestionIndex].type === "select"
+                  ? questions[currentQuestionIndex].options.map((option, index) => (
+                    <button
+                      type="button"
+                      key={index}
+                      className={`${styles.option} ${formData[questions[currentQuestionIndex].name].includes(option) &&
+                        styles.selected
+                        }`}
+                      onClick={() =>
+                        handleOptionClick(questions[currentQuestionIndex].name, option)
+                      }
+                    >
                       {option}
-                  
-                   
-                  </button>
-                ))
-                : null}
+
+                    </button>
+                  ))
+                  : null}
+              </div>
+            </div>
+          )}
+
+          {currentQuestionIndex === questions.length && (
+            <div className={styles.additionalInfoContainer}>
+              {currentDetailIndex === 0 && (
+                <div className={styles.fieldContainer}>
+                  <label htmlFor="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className={styles.textInput}
+                    placeholder="Enter your name"
+                  />
+                </div>
+              )}
+              {currentDetailIndex === 0 && (
+                <>
+                  <div className={styles.fieldContainer}>
+                    <label htmlFor="email">Email:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className={styles.textInput}
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div className={styles.fieldContainer}>
+                    <label htmlFor="password">Password:</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      value={formData.password}
+                      onChange={handleInputChange}
+                      className={styles.textInput}
+                      placeholder="Enter password"
+                    />
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+
+          <div className={styles.navigationContainer}>
+            <div className={styles.backContainer}>
+              {(currentQuestionIndex > 0 || currentDetailIndex > 0) && (
+                <button
+                  type="button"
+                  onClick={handleBack}
+                  className={styles.navigationButton}
+                >
+
+                  &#8592;
+                </button>
+
+              )}
+            </div>
+            <div className={styles.nextContainer}>
+              {currentQuestionIndex === questions.length ? (
+                <button type="submit" className={styles.submitButton}>
+                  Submit
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className={styles.navigationButton}
+                >
+                  &#8594;
+
+                </button>
+              )}
             </div>
           </div>
-        )}
-
-        {currentQuestionIndex === questions.length && (
-          <div className={styles.additionalInfoContainer}>
-            {currentDetailIndex === 0 && (
-              <div className={styles.fieldContainer}>
-                <label htmlFor="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className={styles.textInput}
-                  placeholder="Enter your name"
-                />
-              </div>
-            )}
-            {currentDetailIndex === 0 && (
-              <>
-                <div className={styles.fieldContainer}>
-                  <label htmlFor="email">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className={styles.textInput}
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div className={styles.fieldContainer}>
-                  <label htmlFor="password">Password:</label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    value={formData.password}
-                    onChange={handleInputChange}
-                    className={styles.textInput}
-                    placeholder="Enter password"
-                  />
-                </div>
-              </>
-            )}
-          </div>
-        )}
-
-        <div className={styles.navigationContainer}>
-          <div className={styles.backContainer}>
-            {(currentQuestionIndex > 0 || currentDetailIndex > 0) && (
-              <button
-                type="button"
-                onClick={handleBack}
-                className={styles.navigationButton}
-              >
-                  {/* <FaArrowLeft size={30}/> */}
-                  &#8592;
-              </button>
-              
-            )}
-          </div>
-          <div className={styles.nextContainer}>
-            {currentQuestionIndex === questions.length ? (
-              <button type="submit" className={styles.submitButton}>
-                Submit
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={handleNext}
-                className={styles.navigationButton}
-              >
-                    &#8594;
-                    {/* <FaArrowRight size={30}/> */}
-              </button>
-            )}
-          </div>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
 
     </>
   );
