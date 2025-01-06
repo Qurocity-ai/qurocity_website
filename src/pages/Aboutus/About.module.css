@@ -28,7 +28,7 @@
 }
 .headingTag h1 {
   color: #2f327d;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.1rem;
   line-height: 4rem;
   text-align: center;
@@ -235,6 +235,7 @@
   justify-content: center;
   border: 1px solid #00046c;
   border-radius: 20px;
+  
 }
 table {
   width: 100%;
@@ -249,10 +250,10 @@ td {
   border-collapse: collapse;
   font-size: 1.2rem;
   color: #00046c;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 28px;
-  text-align: justify;
+  text-align: left;
 }
 @media (max-width: 650px) {
   table,
@@ -1004,7 +1005,7 @@ td {
 }
 .numberBlock span {
   color: #00046c;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 5rem;
 }
 .divider {
@@ -1024,14 +1025,14 @@ td {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .textBlock p {
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.5;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .left .numberBlock {
   margin-left: 10rem;

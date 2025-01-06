@@ -61,8 +61,8 @@ function Aboutus() {
       </Helmet>
 
       {/* <Covernav /> */}
-      {/* <Newnavbar /> */}
-      <Navbar2/>
+      <Newnavbar />
+      {/* <Navbar2/> */}
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>

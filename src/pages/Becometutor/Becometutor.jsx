@@ -72,8 +72,8 @@ Qurocity is the place for you! Join our network of the best language tutors from
       
       </Helmet>
 
-      {/* <Newnavbar /> */}
-      <Navbar2/>
+      <Newnavbar />
+      {/* <Navbar2/> */}
       <div>
         {/* become tutor step by step guide */}
         <div className="enroll-container section-1">

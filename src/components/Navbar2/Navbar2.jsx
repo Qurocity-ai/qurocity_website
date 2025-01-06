@@ -28,8 +28,8 @@ const Navbar2 = () => {
 
       <div className={styles.languageContainer}>
           <li className={styles.dropdown}>
-            {/* <span>Languages</span> */}
-            <button onClick={toggleDropdown}>Languages</button>
+            <span onClick={toggleDropdown}>Languages</span>
+            {/* <button onClick={toggleDropdown}>Languages</button> */}
              {isDropdownVisible&&(
               <div className={styles.dropdownMenu}>
 

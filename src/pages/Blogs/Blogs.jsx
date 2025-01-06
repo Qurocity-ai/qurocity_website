@@ -115,8 +115,8 @@ function Blogs() {
     `}
         </script>
       </Helmet>
-      {/* <Newnavbar /> */}
-      <Navbar2/>
+      <Newnavbar />
+      {/* <Navbar2/> */}
     
       <div className={Blogscss.blogbackground}>
         <div className={Blogscss.blogHeading}>
