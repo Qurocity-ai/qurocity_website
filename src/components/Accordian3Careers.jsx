@@ -53,13 +53,18 @@ export default function ControlledAccordions() {
               fontSize: "1.15rem",
               fontWeight: "600",
               color: "black",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             What is the job of a language interpreter?
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography >
+        <AccordionDetails sx={{
+          fontFamily: "Poppins, Sans-serif",
+        }}>
+          <Typography sx={{
+            fontFamily: "Poppins, Sans-serif",
+          }} >
             The job of a language interpreter is to facilitate communication
             between people who speak different languages. Interpreters convey
             spoken or signed messages from one language to another in various
@@ -98,7 +103,9 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{
+            fontFamily: "Poppins, Sans-serif",
+          }}>
             A translator's qualifications typically include fluency in at least
             two languages, strong listening and memory retention skills,
             cultural understanding, and a bachelor's degree in languages,
@@ -132,13 +139,16 @@ export default function ControlledAccordions() {
               fontSize: "1.15rem",
               fontWeight: "600",
               color: "black",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Is language interpreter/translator a good career?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{
+            fontFamily: "Poppins, Sans-serif",
+          }}>
             Being a language interpreter or translator can be a fulfilling and
             rewarding career for those who are passionate about languages and
             cultural exchange. It offers opportunities to work in various
@@ -173,13 +183,16 @@ export default function ControlledAccordions() {
               fontSize: "1.15rem",
               fontWeight: "600",
               color: "black",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             Is language Interpreter a well paid job?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{
+            fontFamily: "Poppins, Sans-serif",
+          }}>
             language interpreting can be a well-paying job, especially for
             interpreters with specialized skills in high-demand languages or
             industries such as health care, law, or conference interpreting.
@@ -215,13 +228,16 @@ export default function ControlledAccordions() {
               fontSize: "1.15rem",
               fontWeight: "600",
               color: "black",
+              fontFamily: "Poppins, Sans-serif",
             }}
           >
             How to make six figures as an Interpreter?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography sx={{
+            fontFamily: "Poppins, Sans-serif",
+          }}>
             To earn six figures as an interpreter, focus on specializing in
             high-demand fields, such as legal, medical, or conference
             interpreting. Earn relevant certifications to improve credibility

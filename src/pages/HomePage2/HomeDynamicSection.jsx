@@ -5,7 +5,7 @@ const [activeIndex,setactiveIndex] = useState(0)
     // content 
     const items = [
         {
-            title: 'Structure lessons',
+            title: 'Structured lessons',
             subtitle: 'Learn Step-by-Step',
             image: './Home/home3.png',
             description: 'Busy day? No problem! Learn when and where you want, with lessons tailored to fit your schedule.'

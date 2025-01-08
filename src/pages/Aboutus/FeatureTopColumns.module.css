@@ -1,0 +1,133 @@
+.newsppr {
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.pprLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pprLayout h3 {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    color: #00046c;
+}
+
+.iso,
+.pprContent,
+.pprContentRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.pprLeft {
+    margin: 1rem;
+}
+
+.pprContentRight .pprLeft img {
+    width: 30vw;
+    height: 50vh;
+}
+
+.pprLeft img {
+    border-radius: 10px;
+    width: 40vw;
+    height: 50vh;
+
+}
+
+.pprRight {
+    margin: 1rem;
+    width: 50%;
+}
+
+.pprRight p {
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    color: #00046c;
+    font-size: 1.07rem;
+}
+
+.iso .pprLeft img {
+    width: 30vw;
+    height: 75vh;
+}
+
+.newsppr_hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 0.5px solid #c4c4c4;
+}
+
+@media (max-width: 1200px) {
+    .pprLeft img {
+        width: 40vw;
+        height: 50vh;
+    }
+
+    .pprRight p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pprLayout h3 {
+        font-size: 1.7rem;
+    }
+
+    .iso,
+    .pprContent,
+    .pprContentRight {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .pprContentRight {
+        flex-direction: column-reverse;
+    }
+
+    .pprContentRight .pprLeft img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pprLeft img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pprRight p {
+        font-size: 1rem;
+    }
+
+    .iso .pprLeft img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .iso_head {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .iso .pprLeft img {
+        width: 100%;
+        height: 50vh;
+    }
+    .pprRight{
+        width: 90%;
+    }
+}
+
+.hiddenPara {
+    transition: transform 0.5s ease;
+}

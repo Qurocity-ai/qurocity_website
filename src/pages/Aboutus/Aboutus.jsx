@@ -7,6 +7,9 @@ import { useEffect } from "react";
 
 import { Helmet } from "react-helmet";
 import Navbar2 from "../../components/Navbar2/Navbar2";
+import WhatBrings from "./WhatBrings";
+import FeatureTopColumns from "./FeatureTopColumns";
+
 
 function Aboutus() {
   useEffect(() => {
@@ -66,30 +69,11 @@ function Aboutus() {
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>
-        <h1 className={Aboutuscss.big}>
-          We are one of the India&apos;s fastest <br /> growing language
-          learning platforms
-        </h1>
-
-        <h1 className={Aboutuscss.small}>
-          We are one of the India&apos;s fastest growing language learning
-          platforms
-        </h1>
 
         <div className={Aboutuscss.stats}>
-          <img src="/about us/about-us.png" alt="" />
+          <img src="./about us/about-us-2.jpg" alt="" />
         </div>
-        {/* <!-- <a className="register-button" href="">Get Started</a> --> */}
-        <div className={Aboutuscss.regbtn}>
-          <a
-            className={Aboutuscss.registerButton}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get Started
-          </a>
-        </div>
+      
       </div>
 
       {/* <!-- sidebar to be opened after clicking the register button --> */}
@@ -155,7 +139,10 @@ function Aboutus() {
 
       {/* --------------- what brings us here section --------------------------- */}
 
-      <div className={Aboutuscss.bring}>
+      <WhatBrings/>
+
+
+      {/* <div className={Aboutuscss.bring}>
         <h2>WHAT BRINGS US HERE?</h2>
 
         <div className={`${Aboutuscss.section} ${Aboutuscss.right}`}>
@@ -204,13 +191,14 @@ function Aboutus() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+
 
       {/* -------------------------------------------------------------- */}
 
       {/* <!-- tabular section --> */}
 
-      <div className={Aboutuscss.tableComparison}>
+      {/* <div className={Aboutuscss.tableComparison}>
         <table>
           <tr>
             <td>
@@ -295,14 +283,16 @@ function Aboutus() {
             </td>
           </tr>
         </table>
-      </div>
+      </div> */}
 
       {/* <!-- origin story section --> */}
 
+
+       <FeatureTopColumns/>
+
       <div className={Aboutuscss.originStorySection}>
         <div className={Aboutuscss.rightSide}>
-          <h1>Origin Story</h1>
-          <br />
+          <h1>ORIGIN STORY</h1>
           <br />
           <p>
             Like any great origin story, ours began with a challenge. In the
@@ -437,17 +427,14 @@ function Aboutus() {
 
         <div
           className={Aboutuscss.founderCard}
-          style={{
-            background: "#303143",
-          }}
         >
           <img
-            src="/about us/Sheetal-mam.png"
+            src="./about us/sheetal-mam.jpg"
             alt="Sheetal Ramkumar"
             className={Aboutuscss.founderImage}
           />
           <div className={Aboutuscss.founderInfo}>
-            <h3>Sheetal Ramkumar</h3>
+            <h3>Sheetal Ramkumar | Founder and CEO</h3>
             <hr className={Aboutuscss.founder_divider} />
             <p>
               Sheetal, CEO of Curiotory, brings two decades of education
@@ -465,17 +452,17 @@ function Aboutus() {
 
         <div
           className={`${Aboutuscss.founderCard} ${Aboutuscss.right1}`}
-          style={{
-            background: "#54364E",
-          }}
+          // style={{
+          //   background: "#54364E",
+          // }}
         >
           <img
-            src="/about us/Ram-sir.png"
+            src="./about us/ram-sir.jpg"
             alt="Ramkumar Kayarat"
             className={Aboutuscss.founderImage}
           />
           <div className={Aboutuscss.founderInfo}>
-            <h3>Ramkumar Kayarat</h3>
+            <h3>Ramkumar Kayarat | Founder and CHRO</h3>
             <hr className={Aboutuscss.founder_divider} />
             <p>
               Ram, Curiotory's Chief People and Culture Officer, brings over two
@@ -492,12 +479,12 @@ function Aboutus() {
         </div>
         <div
           className={Aboutuscss.right2}
-          style={{
-            background: "#54364E",
-          }}
+          // style={{
+          //   background: "#54364E",
+          // }}
         >
           <img
-            src="/about us/Ram-sir.png"
+            src="./about us/ram-sir.jpg"
             alt="Ramkumar Kayarat"
             className={Aboutuscss.founderImage}
           />
@@ -519,6 +506,7 @@ function Aboutus() {
         </div>
       </div>
 
+  
       <Footer2 />
     </>
   );

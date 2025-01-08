@@ -1,0 +1,123 @@
+.main_contener {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-family: Poppins, Sans-serif;
+    margin-top: 4rem;
+
+}
+
+.main_contener h2 {
+    color: #00046C;
+    font-size: 1.5rem;
+
+}
+
+.card_contener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.card h4 {
+    font-size: 4rem;
+    font-style: italic;
+    color: #00046C;
+}
+
+.card p {
+    color: #00046C;
+    text-align: left;
+    justify-content: left;
+    font-size: 0.8rem;
+}
+
+.whatBringContener {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1.5rem;
+    margin: auto;
+
+}
+
+.whatBringCard {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 320px;
+    height: 250px;
+}
+
+.whatBringCard img {
+    width: 185px;
+    height: auto;
+    margin: auto;
+    /* margin-bottom: 1rem; */
+
+}
+
+.whatBringCard p {
+    color: #00046C;
+    text-align: left;
+    justify-content: left;
+    font-size: 0.9rem;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .card_contener {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for tablets */
+    }
+    .whatBringContener{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card h3 {
+        font-size: 4rem;
+        /* Adjust font size for tablets */
+    }
+
+    .card p {
+        font-size: 0.8rem;
+        /* Adjust font size for tablets */
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .main_contener {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .card_contener {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+    }
+
+    .card h3 {
+        font-size: 3rem;
+        /* Adjust font size for mobile */
+    }
+    .main_contener h2{
+        text-align: center;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+        /* Adjust font size for mobile */
+    }
+
+    .whatBringContener{
+        grid-template-columns: 1fr;
+    }
+}

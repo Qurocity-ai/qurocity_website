@@ -167,7 +167,7 @@ function MultiStepQuiz() {
     <>
       <div className={styles.quizNav}>
         <Link to="/">
-          <img src='./Index/logo-footer.png' />
+          <img src='./navbar/newlogo.png' />
         </Link>
 
       </div>

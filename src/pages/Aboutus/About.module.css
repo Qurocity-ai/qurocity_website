@@ -1,13 +1,11 @@
-/* * {
-  padding: 0;
-  margin: 0;
-} */
+
 .mascotAbout {
   height: 500px;
   width: auto;
 }
-.big{
-  margin-top: 4rem;
+
+.headingTag{
+  margin-top: 8rem;
 }
 @media screen and (max-width: 1000px) {
   .mascotAbout {
@@ -199,9 +197,9 @@
 .bio p {
   text-align: justify;
   color: #00046c;
-  font-family: Raleway, Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  
 }
 @media screen and (max-width: 1200px) {
   .bio p {
@@ -298,12 +296,11 @@ td {
 .originStorySection .rightSide h1 {
   color: #00046c;
   font-family: Poppins, Sans-serif;
-  font-size: 2.7rem;
-  font-weight: 600;
+  font-size: 1.6rem;
   text-align: center;
 }
 .originStorySection .rightSide p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
   margin-top: 0;
@@ -876,20 +873,19 @@ td {
 }
 .foundersSection {
   text-align: center;
-  padding: 40px;
+ 
 }
 .foundersSection h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1b2e59;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  /* font-weight: bold; */
+  color: #00046C;
+  margin-bottom: 2rem;
 }
 .founderCard {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #162348;
-  color: #fff;
+  color: #00046C;
   margin-bottom: 30px;
   border-radius: 10px;
   overflow: hidden;
@@ -897,6 +893,7 @@ td {
   padding: 20px;
   gap: 3rem;
   margin: 1.5rem 9rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .founderImage {
   width: 150px;
@@ -913,11 +910,11 @@ td {
   flex-direction: row-reverse;
 }
 .founder_divider {
-  border: 1px solid #fff;
+  border: 1px solid #C0C0C0;
 }
 .founderInfo h3 {
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .founderInfo p {
@@ -937,7 +934,8 @@ td {
     margin: 1rem 0.2rem;
   }
   .foundersSection h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
   .founderInfo h3 {
     font-size: 1.1rem;
@@ -952,8 +950,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #162348;
-    color: #fff;
+    color: #00046C;
     margin-bottom: 30px;
     border-radius: 10px;
     overflow: hidden;
@@ -962,6 +959,7 @@ td {
     gap: 3rem;
     flex-direction: column;
     margin: 1rem 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
   .founderImage {
     margin-bottom: 5px;
