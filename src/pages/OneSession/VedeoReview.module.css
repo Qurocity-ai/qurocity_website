@@ -1,0 +1,107 @@
+/* Main container for cards */
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px; 
+    margin-top: 1rem;
+}
+.main{
+    text-align: center;
+    margin-top: 7rem;
+    color: #00046C;
+}
+
+/* Individual card styling */
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+}
+
+/* Card content container */
+.cardContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+/* Left side styling */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* border: 1px solid red; */
+}
+.left p{
+    color: #00046C;
+    line-height: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.left span{
+ font-weight: 300px;
+ font-size: 1rem;
+}
+
+/* Image container for profile pictures */
+.imgContainer {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+   margin-bottom: 1rem;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+ 
+}
+
+/* Right side styling for video */
+.right iframe {
+    width: 100%;
+    height: 250px;
+   
+}
+
+.viewMoreButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+
+.viewMoreButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .cardContent {
+        flex-direction: column;
+    }
+
+    .right iframe {
+        height: 180px;
+    }
+        .cardsContainer {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(350px, 1fr));
+            
+        }
+}
