@@ -71,7 +71,7 @@ function Aboutus() {
       <div className={Aboutuscss.headingTag}>
 
         <div className={Aboutuscss.stats}>
-          <img src="./about us/about-us-2.jpg" alt="" />
+          <img src="./about us/aboutmain.png" alt="" />
         </div>
       
       </div>
@@ -126,7 +126,7 @@ function Aboutus() {
       <div className={Aboutuscss.bio}>
         <p>
           Over a billion people worldwide have embraced the challenge of
-          learning a new language. At Curiotory, we believe in going beyond mere
+          learning a new language. At Qurocity, we believe in going beyond mere
           linguistic competence. Founded in 2020, we're an Indian startup
           dedicated to revolutionizing language learning. <br />
           <br />
@@ -137,153 +137,10 @@ function Aboutus() {
         </p>
       </div>
 
-      {/* --------------- what brings us here section --------------------------- */}
+      {/* --------------- what brings us here section ---------- */}
 
       <WhatBrings/>
 
-
-      {/* <div className={Aboutuscss.bring}>
-        <h2>WHAT BRINGS US HERE?</h2>
-
-        <div className={`${Aboutuscss.section} ${Aboutuscss.right}`}>
-          <div className={Aboutuscss.numberBlock}>
-            <span>01</span>
-          </div>
-          <div className={Aboutuscss.textBlock}>
-            <h3>Our Vision</h3>
-            <hr className={Aboutuscss.divider} />
-            <p>
-              To empower individuals and institutions to harness the power of
-              learning foreign languages, turning simple curiosities into
-              career-defining and life-changing experiences.
-            </p>
-          </div>
-        </div>
-
-        <div className={`${Aboutuscss.section} ${Aboutuscss.left}`}>
-          <div className={Aboutuscss.numberBlock}>
-            <span>02</span>
-          </div>
-          <div className={Aboutuscss.textBlock}>
-            <h3>Our Mission</h3>
-            <hr className={Aboutuscss.divider} />
-            <p>
-              To create transformative multilingual journeys that foster a more
-              inclusive and empathetic society— where language is not a barrier
-              or a threat, but a bridge that connects people and cultures.
-            </p>
-          </div>
-        </div>
-
-        <div className={`${Aboutuscss.section} ${Aboutuscss.right}`}>
-          <div className={Aboutuscss.numberBlock}>
-            <span>03</span>
-          </div>
-          <div className={Aboutuscss.textBlock}>
-            <h3>Our Values</h3>
-            <hr className={Aboutuscss.divider} />
-            <p>
-              We believe in the power of language to unite, inspire, and
-              transform. Our core values are built around inclusivity, empathy,
-              and growth, ensuring that every learning experience bridges
-              cultures, breaks down barriers, and fosters understanding across
-              diverse communities.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-
-      {/* -------------------------------------------------------------- */}
-
-      {/* <!-- tabular section --> */}
-
-      {/* <div className={Aboutuscss.tableComparison}>
-        <table>
-          <tr>
-            <td>
-              <p>
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  India’s fastest-growing language learning partner
-                </span>{" "}
-                for individuals, educational institutions, and corporate
-                companies
-              </p>
-            </td>
-            <td>
-              <p>
-                A massive and still growing ecosystem of Indian and{" "}
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  native private tutors
-                </span>{" "}
-                with a proven track record
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                One platform that offers{" "}
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  customizable and scalable
-                </span>{" "}
-                Asian, European, and Indian Sign language courses
-              </p>
-            </td>
-            <td>
-              <p>
-                World-class preparation for{" "}
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  globally-recognized language certifications
-                </span>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  Live and interactive lectures
-                </span>{" "}
-                Hundreds of students from 15 + countries across 3 continents
-                on-board
-              </p>
-            </td>
-            <td>
-              <p>
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  Real-time analytics and custom reports
-                </span>{" "}
-                to enhance learning outcomes
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div> */}
 
       {/* <!-- origin story section --> */}
 
@@ -315,112 +172,7 @@ function Aboutus() {
 
       {/* <!-- vision section --> */}
 
-      {/* <div className={Aboutuscss.visionSection}>
-        <h1>Why we are here</h1>
-
-        <div className={Aboutuscss.visionOfOurs}>
-          <div className={Aboutuscss.leftSide}>
-            <img src="/about us/vision.png" alt="vision" />
-          </div>
-
-          <div className={Aboutuscss.rightSide}>
-            <h1>
-              Our <br />
-              <span className={Aboutuscss.boldFirst}>Vision</span>
-            </h1>
-            <br />
-            <br />
-            <p>
-              To empower individuals and institutions to tap into the power of
-              learning foreign languages to transform simple curiosities into
-              career-making and life-changing experiences.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <!-- mission section --> */}
-
-      {/* <div className={Aboutuscss.missionSection}>
-        <div className={Aboutuscss.leftSide}>
-          <h1>
-            Our <span className={Aboutuscss.boldFirst}>Mission</span> <br />
-          </h1>
-          <br />
-          <p>
-            To create transformative multilingual journeys that contribute to a
-            more inclusive and empathetic society where language is neither a
-            barrier nor a threat – but a bridge that brings people together.
-          </p>
-        </div>
-
-        <div className={Aboutuscss.rightSide}>
-          <img
-            loading="lazy"
-            decoding="async"
-            width="463"
-            height="611"
-            src="/about us/mission.png"
-            alt="mission"
-          />
-        </div>
-      </div> */}
-
-      {/* <!-- founder sections --> */}
-
-      {/* <div className={Aboutuscss.founderSection}>
-        <h1>Meet our Founders</h1>
-
-        <div className={Aboutuscss.persons}>
-          <div className={Aboutuscss.sheetalMam}>
-            <div className={Aboutuscss.image}>
-              <img src="/about us/Sheetal-mam.jpeg" alt="sheetal" />
-            </div>
-            <div className={Aboutuscss.name}>
-              <h1>
-                <span className={Aboutuscss.boldFirst}>Sheetal</span> Ramkumar
-              </h1>
-            </div>
-            <div className={Aboutuscss.info}>
-              <p>
-                Sheetal, CEO of Qurocity, brings two decades of education
-                experience and is celebrated among India&apos;s influential
-                women and business leaders. With an MBA from Symbiosis, a PG in
-                PR & Advertising from MICA, and a diploma in International
-                Telecom System Management from IIT Delhi. She&apos;s a
-                powerhouse in both business and technical domains. Recognized
-                among the 21 Most Influential Women Leaders in India and the 10
-                Most Inspiring Business Leaders, Sheetal is shaping the future
-                of Qurocity with her leadership and expertise.
-              </p>
-            </div>
-          </div>
-
-          <div className={Aboutuscss.ramSir}>
-            <div className={Aboutuscss.image}>
-              <img src="/about us/Ram-sir.jpg" alt="Ram" />
-            </div>
-            <div className={Aboutuscss.name}>
-              <h1>
-                <span className={Aboutuscss.boldFirst}>Ramkumar</span> Kayarat
-              </h1>
-            </div>
-            <div className={Aboutuscss.info}>
-              <p>
-                Ram, Qurocity&apos;s Chief People and Culture Officer, brings
-                over two decades of Telecom industry experience, prioritizing
-                customer-centric approaches. With a background at Idea Cellular
-                Ltd., Reliance Communications, and Tata Communications,
-                he&apos;s adept in learning development. Besides, Ram is an avid
-                football enthusiast, adventurer, cyclist, trekker, and sports
-                blogger. Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
-                Jamshedpur, he&apos;s committed to fostering a collaborative
-                internal culture at Qurocity for mutual success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
 
       <div className={Aboutuscss.foundersSection}>
         <h2>MEET OUR FOUNDERS</h2>
@@ -437,14 +189,14 @@ function Aboutus() {
             <h3>Sheetal Ramkumar | Founder and CEO</h3>
             <hr className={Aboutuscss.founder_divider} />
             <p>
-              Sheetal, CEO of Curiotory, brings two decades of education
+              Sheetal, CEO of Qurocity, brings two decades of education
               experience and is celebrated among India's influential women and
               business leaders. With an MBA from Symbiosis, a PG in PR &
               Advertising from MICA, and a diploma in International Telecom
               System Management from IIT Delhi. She's a powerhouse in both
               business and technical domains. Recognized among the 21 Most
               Influential Women Leaders in India and the 10 Most Inspiring
-              Business Leaders, Sheetal is shaping the future of Curiotory with
+              Business Leaders, Sheetal is shaping the future of Qurocity with
               her leadership and expertise.
             </p>
           </div>
@@ -465,7 +217,7 @@ function Aboutus() {
             <h3>Ramkumar Kayarat | Founder and CHRO</h3>
             <hr className={Aboutuscss.founder_divider} />
             <p>
-              Ram, Curiotory's Chief People and Culture Officer, brings over two
+              Ram, Qurocity's Chief People and Culture Officer, brings over two
               decades of Telecom industry experience, prioritizing
               customer-centric approaches. With a background at Idea Cellular
               Ltd., Reliance Communications, and Tata Communications, he's adept
@@ -473,7 +225,7 @@ function Aboutus() {
               enthusiast, adventurer, cyclist, trekker, and sports blogger.
               Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
               Jamshedpur, he's committed to fostering a collaborative internal
-              culture at Curiotory for mutual success.
+              culture at Qurocity for mutual success.
             </p>
           </div>
         </div>
@@ -489,10 +241,10 @@ function Aboutus() {
             className={Aboutuscss.founderImage}
           />
           <div className={Aboutuscss.founderInfo}>
-            <h3>Ramkumar Kayarat</h3>
+            <h3>Ramkumar Kayarat | Founder and CHRO</h3>
             <hr className={Aboutuscss.founder_divider} />
             <p>
-              Ram, Curiotory's Chief People and Culture Officer, brings over two
+              Ram, Qurocity's Chief People and Culture Officer, brings over two
               decades of Telecom industry experience, prioritizing
               customer-centric approaches. With a background at Idea Cellular
               Ltd., Reliance Communications, and Tata Communications, he's adept
@@ -500,7 +252,7 @@ function Aboutus() {
               enthusiast, adventurer, cyclist, trekker, and sports blogger.
               Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
               Jamshedpur, he's committed to fostering a collaborative internal
-              culture at Curiotory for mutual success.
+              culture at Qurocity for mutual success.
             </p>
           </div>
         </div>

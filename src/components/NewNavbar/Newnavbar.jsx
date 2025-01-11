@@ -1,6 +1,7 @@
 import { VisibilityOff } from "@mui/icons-material";
 import newnavv from "./Newnavbar.module.css";
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Newnavbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -33,13 +34,16 @@ function Newnavbar() {
       <div className={newnavv.navvbarContainer}>
         <header className={newnavv.header}>
           <div className={newnavv.logoContainer}>
-            <a href="/">
-              <img
-                src="/Index/logo.png"
-                alt="Qurocity Logo"
-                className={newnavv.logo}
-              />
-            </a>
+            
+            <Link to="/">
+                <img
+                  src="/Index/logo.png"
+                  alt="Qurocity Logo"
+                  className={newnavv.logo}
+                />
+            </Link>
+
+           
           </div>
 
           <a href="https://qurocity.ai/lms/" className={newnavv.Btn}>
@@ -252,12 +256,13 @@ function Newnavbar() {
                 </div>
               )}
             </div>
-            <a href="/blogs">Blogs</a>
-            <a href="/becometutor">Become a Tutor</a>
-            <a href="/aboutus">About us</a>
-            <a href="/one-on-one-session" className={newnavv.contactUs}>
+            
+            <Link to="/blogs">Blogs</Link>
+            <Link to="/becometutor">Become a Tutor</Link>
+            <Link to="/aboutus">About us</Link>
+            <Link to="/one-on-one-session" className={newnavv.contactUs}>
                   <span>1-on-1 Session</span>
-                </a>
+                </Link>
 
             <a
               href="https://qurocity.ai/lms/"
@@ -451,9 +456,12 @@ function Newnavbar() {
                   </div>
                   )}
                 </div>
-                <a href="/blogs">Blogs</a>
-                <a href="/becometutor">Become a Tutor</a>
-                <a href="/aboutus">About us</a>
+                <Link to="/blogs">Blogs</Link>
+                {/* <a href="/blogs">Blogs</a> */}
+                <Link to="/becometutor">Become a Tutor</Link>
+                {/* <a href="/becometutor">Become a Tutor</a> */}
+                <Link to="/aboutus">About us</Link>
+                {/* <a href="/aboutus">About us</a> */}
                 <a href="/one-on-one-session" className={newnavv.contactUs}>
                   <span>1-on-1 Session</span>
                 </a>

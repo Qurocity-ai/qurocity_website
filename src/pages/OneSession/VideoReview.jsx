@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import VideoStyle from "../../pages/OneSession/VedeoReview.module.css";
 import CircularProgress from '@mui/material/CircularProgress';
 import Stack from '@mui/material/Stack';
+import { Box } from "@mui/material";
+import { AiOutlineDown, AiOutlineUp } from "react-icons/ai"; 
 function VideoReview() {
     const [teachers, setTeachers] = useState([]);
-    const [visibleCount, setVisibleCount] = useState(4); // Initial visible items count
-
+    const [visibleCount, setVisibleCount] = useState(4); 
+    const [isExpanded, setIsExpanded] = useState(false);
     const url = `https://curiotory-admin-backend-s4zy.onrender.com/filterteachers`;
 
     const fetchTeachers = () => {
@@ -27,9 +29,14 @@ function VideoReview() {
         fetchTeachers();
     }, []);
 
-    // Function to handle "View More" click
-    const handleViewMore = () => {
-        setVisibleCount((prevCount) => prevCount + 4); // Show 4 more items on each click
+    // Function to handle "View More/Less" toggle
+    const handleToggleView = () => {
+        if (isExpanded) {
+            setVisibleCount(4); // Show only initial 4 items
+        } else {
+            setVisibleCount(8); // Show all only 8 items
+        }
+        setIsExpanded(!isExpanded); // Toggle the expanded state
     };
 
     return (
@@ -45,6 +52,7 @@ function VideoReview() {
                                         <div className={VideoStyle.imgContainer}>
                                             <img src={teacher.imgurl} alt="Teacher" />
                                         </div>
+                                        <p><span>Name: </span>{teacher.name}</p>
                                         <p><span>Language:</span> {teacher.language}</p>
                                         <p><span>Proficiency level:</span> {teacher.proflevel}</p>
                                         <p><span>No of students taught till date:</span> {teacher.noStud}</p>
@@ -62,18 +70,36 @@ function VideoReview() {
                             </div>
                         ))
                     ) : (
-                        <Stack sx={{ color: 'grey.500' }} spacing={2} direction="row">
+
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
                             <CircularProgress color="secondary" />
-                            <CircularProgress color="success" />
-                            <CircularProgress color="inherit" />
-                        </Stack>
+                        </Box>
+
+
                     )}
                 </div>
 
                 {/* View More button */}
-                {visibleCount < teachers.length && ( // Show button only if there are more items to display
-                    <button className={VideoStyle.viewMoreButton} onClick={handleViewMore}>
-                        View More
+                {teachers.length > 4 && (
+                    <button
+                        className={VideoStyle.viewMoreButton}
+                        onClick={handleToggleView}
+                    >
+                        {isExpanded ? (
+                            <>
+                                <AiOutlineUp/>
+                            </>
+                        ) : (
+                            <>
+                                <AiOutlineDown />
+                            </>
+                        )}
                     </button>
                 )}
             </div>

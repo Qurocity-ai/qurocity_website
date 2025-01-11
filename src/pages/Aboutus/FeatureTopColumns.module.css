@@ -55,7 +55,11 @@
     color: #00046c;
     font-size: 1.07rem;
 }
-
+.pprRight h6{
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+  
+}
 .iso .pprLeft img {
     width: 30vw;
     height: 75vh;

@@ -102,6 +102,35 @@ function FeatureTopColumns() {
                             </p>
                         </div>
                     </div>
+
+                    <hr className={newcover.newsppr_hr} />
+
+            {/* Google certified */}
+                    <div className={newcover.pprContentRight}>
+                        <div className={newcover.pprRight}>
+                            <p>
+                                <h6 ><strong>Qurocity Joins the Google for Startups AI Academy India 2024!</strong></h6>
+                                We are thrilled to announce that Qurocity has been selected to participate in the prestigious <span>
+                                    <strong> Google for Startups AI Academy India 2024</strong></span> in Mumbai! This incredible achievement highlights our dedication to driving innovation and excellence in the field of artificial intelligence.
+
+                                Empowered by a World-Class Platform
+
+                                Being part of this transformative program provides us with an unparalleled opportunity to:
+                                Refine our AI-driven solutions
+                                Collaborate with industry leaders and pioneers
+                               	Learn from top experts in the AI ecosystem
+
+                                A Milestone in Our Journey
+
+                                This recognition marks a significant step forward in our mission to harness the power of AI for impactful and meaningful solutions. We are deeply grateful to Google for Startups and Google for Developers for creating platforms that enable startups like us to thrive, innovate, and make a difference.
+                            </p>
+                        </div>
+                        <div className={newcover.pprLeft}>
+                            <img  src="./about us/googleAiAward.jpeg" alt="New Featured Image" />
+                        </div>
+                    </div>
+
+
                     {/* <hr className={newcover.newsppr_hr} /> */}
                 </div>
             </div>
