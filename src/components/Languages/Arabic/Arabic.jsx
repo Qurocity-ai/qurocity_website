@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/ArabicCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import ArabicCurriculum from "./ArabicCurriculum";
 
 function Arabic() {
   const [proficiency, setProficiency] = useState("A1");
@@ -551,7 +552,7 @@ Join Online Arabic Classes Now!
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <ArabicCurriculum/>
 
       {/* reviews section */}
       <Rev />

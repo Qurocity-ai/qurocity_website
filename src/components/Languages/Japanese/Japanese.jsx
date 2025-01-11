@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/JapaneseCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import JapaneseCurriculum from "./JapaneseCurriculum";
 
 function Japanese() {
   const [proficiency, setProficiency] = useState("A1");
@@ -537,7 +538,7 @@ Join Online Japanese Classes Now!
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <JapaneseCurriculum />
 
       {/* reviews section */}
       <Rev />

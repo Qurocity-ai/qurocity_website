@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/MandCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import MandarinCurriculum from "./MandarinCurriculum";
 
 function Mandarin() {
   const [proficiency, setProficiency] = useState("A1");
@@ -543,7 +544,7 @@ function Mandarin() {
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <MandarinCurriculum />
 
       {/* reviews section */}
       <Rev />

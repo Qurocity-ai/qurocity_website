@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import styles from "./SpanishCurriculum.module.css";
+// import styles from "./SpanishCurriculum.module.css";
+import styles from "../LanguagesCurriculum.module.css";
 
 const SpanishCurriculum = () => {
     const [activeTab, setActiveTab] = useState("A1");

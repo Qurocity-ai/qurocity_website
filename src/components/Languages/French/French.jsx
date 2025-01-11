@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/FrenchCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import FrenchCurriculum from "./FrenchCurriculum";
 
 function French() {
   const [proficiency, setProficiency] = useState("A1");
@@ -512,7 +513,7 @@ function French() {
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <FrenchCurriculum />
 
       {/* reviews section */}
       <Rev />

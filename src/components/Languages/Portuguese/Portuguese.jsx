@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/PortugueseCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import PortugueseCurriculum from "./PortugueseCurriculum";
 
 function Portuguese() {
   const [proficiency, setProficiency] = useState("A1");
@@ -544,7 +545,7 @@ Join Online Portuguese Classes Now!
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <PortugueseCurriculum />
 
       {/* reviews section */}
       <Rev />

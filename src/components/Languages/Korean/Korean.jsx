@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/KoreanCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import KoreanCurriculum from "./KoreanCurriculum";
 
 function Korean() {
   const [proficiency, setProficiency] = useState("A1");
@@ -551,7 +552,7 @@ Join Online Korean Classes Now!
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <KoreanCurriculum />
 
       {/* reviews section */}
       <Rev />

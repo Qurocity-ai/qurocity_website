@@ -9,6 +9,7 @@ import ArabicCurr from "../../Curriculum/DanishCurr";
 import axios from "axios";
 import config from "../../../services/config";
 import Navbar2 from "../../Navbar2/Navbar2";
+import DanishCurriculum from "./DanishCurriculum";
 
 function Danish() {
   const [proficiency, setProficiency] = useState("A1");
@@ -543,7 +544,7 @@ Join Online Danish Classes Now!
       </div>
 
       {/* curriculum */}
-      <ArabicCurr />
+      <DanishCurriculum />
 
       {/* reviews section */}
       <Rev />
