@@ -2,6 +2,7 @@
 import { Helmet } from "react-helmet";
 import "./Footer.css";
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const handleClick = (event) => {
@@ -150,25 +151,25 @@ function Footer() {
                 <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <a href="/blogs">Blogs</a>
+                    < Link to="/blogs">Blogs</Link>
                   </li>
                   <li>
-                    <a href="/meetthetutor">Meet Our Tutor</a>
+                    <Link to="/meetthetutor">Meet Our Tutor</Link>
                   </li>
                   <li>
-                    <a href="/press">Press Release</a>
+                    <Link to="/press">Press Release</Link>
                   </li>
                   {/* <li>
                     <a href="/becometutor">Become a Tutor</a>
                   </li> */}
                   <li>
-                    <a href="/life">Life at Qurocity</a>
+                    <Link to="/life">Life at Qurocity</Link>
                   </li>
                   <li>
-                    <a href="/careers">Career with Us</a>
+                    <Link to="/careers">Career with Us</Link>
                   </li>
                   <li>
-                    <a href="/contactus">Contact Us</a>
+                    <Link to="/contactus">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -214,13 +215,13 @@ function Footer() {
 
                 <ul>
                   <li>
-                    <a href="/privacy">Privacy Policy</a>
+                    <Link to="/privacy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="/refund">Refund Policy & NDNC</a>
+                    <Link to="/refund">Refund Policy & NDNC</Link>
                   </li>
                   <li>
-                    <a href="/terms">Terms And Conditions</a>
+                    <Link to="/terms">Terms And Conditions</Link>
                   </li>
                 </ul>
               </div>
@@ -249,50 +250,8 @@ function Footer() {
           </div>
 
           <div className="row">
-            {/* social links */}
-            {/* <div className="social_profile col-lg-12 col-sm-12 col-xs-12 ">
-              <hr
-              />
-              <ul>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin iconlinkdin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/qurocity_?igsh=MTRxM3A5eXdkNzFzMQ=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
 
-                <li>
-                  <a
-                    href="https://www.facebook.com/Curiotory/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-              </ul>
-            </div> */}
+            {/* social links */}
 
             <div className="social_profile col-lg-12 col-sm-12 col-xs-12 ">
               <hr />

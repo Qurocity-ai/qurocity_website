@@ -204,8 +204,8 @@ Join Online Portuguese Classes Now!
         </Helmet>
 
         {/* new navbar */}
-        {/* <Newnavbar /> */}
-        <Navbar2/>
+        <Newnavbar />
+        {/* <Navbar2/> */}
 
         {/* language cover page */}
         <main className={fr.main}>

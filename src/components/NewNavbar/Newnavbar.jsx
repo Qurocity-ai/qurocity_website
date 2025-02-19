@@ -95,7 +95,7 @@ function Newnavbar() {
               </a>
               {dropdownOpen && (
                 <div className={newnavv.dropdownContent}>
-                  <a href="/learnenglish">
+                  <Link to="/learnenglish">
                     <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -109,8 +109,8 @@ function Newnavbar() {
                       Learn
                     </span>{" "}
                     English
-                  </a>
-                  <a href="/learnspanish">
+                  </Link>
+                  <Link to="/learnspanish">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -122,8 +122,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Spanish</a>
-                  <a href="/learnfrench">
+                    </span>{" "}Spanish</Link>
+                  <Link to="/learnfrench">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -135,8 +135,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}French</a>
-                  <a href="/learngerman">
+                    </span>{" "}French</Link>
+                  <Link to="/learngerman">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -148,8 +148,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}German</a>
-                  <a href="/learnrussian">
+                    </span>{" "}German</Link>
+                  <Link to="/learnrussian">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -161,8 +161,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Russian</a>
-                  <a href="/learnmandarin">
+                    </span>{" "}Russian</Link>
+                  <Link to="/learnmandarin">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -174,8 +174,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Mandarin</a>
-                  <a href="/learndutch">
+                    </span>{" "}Mandarin</Link>
+                  <Link to="/learndutch">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -187,8 +187,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Dutch</a>
-                  <a href="/learnjapanese">
+                    </span>{" "}Dutch</Link>
+                  <Link to="/learnjapanese">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -200,8 +200,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Japanese</a>
-                  <a href="/learnkorean">
+                    </span>{" "}Japanese</Link>
+                  <Link to="/learnkorean">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -213,8 +213,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Korean</a>
-                  <a href="/learnportuguese">
+                    </span>{" "}Korean</Link>
+                  <Link to="/learnportuguese">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -226,8 +226,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Portuguese</a>
-                  <a href="/learnarabic">
+                    </span>{" "}Portuguese</Link>
+                  <Link to="/learnarabic">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -239,8 +239,8 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Arabic</a>
-                  <a href="/learndanish">
+                    </span>{" "}Arabic</Link>
+                  <Link to="/learndanish">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -252,7 +252,7 @@ function Newnavbar() {
                       }}
                     >
                       Learn
-                    </span>{" "}Danish</a>
+                    </span>{" "}Danish</Link>
                 </div>
               )}
             </div>
@@ -276,13 +276,13 @@ function Newnavbar() {
           <div className={newnavv.overlay} onClick={toggleSideNav}>
             <div>
               <div className={newnavv.sidelogoContainer}>
-                <a href="/">
+                <Link to="/">
                   <img
                     src="/Index/logo-course.png"
                     alt="Qurocity Logo"
                     className={newnavv.logo}
                   />
-                </a>
+                </Link>
 
                 <button className={newnavv.closebtn} onClick={toggleSideNav}>
                   &times;
@@ -295,7 +295,7 @@ function Newnavbar() {
                   </a>
                   {dropdownOpen && (
                     <div className={newnavv.dropdownContent}>
-                    <a href="/english">
+                      <Link to="/learnenglish">
                       <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -309,8 +309,8 @@ function Newnavbar() {
                         Learn
                       </span>{" "}
                       English
-                    </a>
-                    <a href="/spanish">
+                    </Link>
+                      <a href="/learnspanish">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -323,7 +323,7 @@ function Newnavbar() {
                       >
                         Learn
                       </span>{" "}Spanish</a>
-                    <a href="/french">
+                    <Link to="/learnfrench">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -335,8 +335,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}French</a>
-                    <a href="/german">
+                      </span>{" "}French</Link>
+                    <Link to="/learngerman">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -348,8 +348,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}German</a>
-                    <a href="/russian">
+                      </span>{" "}German</Link>
+                    <Link to="/learnrussian">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -361,8 +361,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Russian</a>
-                    <a href="/mandarin">
+                      </span>{" "}Russian</Link>
+                    <Link to="/learnmandarin">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -374,8 +374,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Mandarin</a>
-                    <a href="/dutch">
+                      </span>{" "}Mandarin</Link>
+                    <Link to="/learndutch">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -387,8 +387,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Dutch</a>
-                    <a href="/japanese">
+                      </span>{" "}Dutch</Link>
+                    <Link to="/learnjapanese">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -400,8 +400,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Japanese</a>
-                    <a href="/korean">
+                      </span>{" "}Japanese</Link>
+                    <Link  to="/learnkorean">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -413,8 +413,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Korean</a>
-                    <a href="/portuguese">
+                      </span>{" "}Korean</Link>
+                    <Link to="/learnportuguese">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -426,8 +426,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Portuguese</a>
-                    <a href="/arabic">
+                      </span>{" "}Portuguese</Link>
+                    <Link to="/learnarabic">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -439,8 +439,8 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Arabic</a>
-                    <a href="/danish">
+                      </span>{" "}Arabic</Link>
+                    <Link to="/learndanish">
                     <span
                         style={{
                           position: "absolute", // Positioning it absolutely
@@ -452,7 +452,7 @@ function Newnavbar() {
                         }}
                       >
                         Learn
-                      </span>{" "}Danish</a>
+                      </span>{" "}Danish</Link>
                   </div>
                   )}
                 </div>
@@ -462,9 +462,9 @@ function Newnavbar() {
                 {/* <a href="/becometutor">Become a Tutor</a> */}
                 <Link to="/aboutus">About us</Link>
                 {/* <a href="/aboutus">About us</a> */}
-                <a href="/one-on-one-session" className={newnavv.contactUs}>
+                <Link to="/one-on-one-session" className={newnavv.contactUs}>
                   <span>1-on-1 Session</span>
-                </a>
+                </Link>
                 <a
                   href="https://qurocity.ai/lms/"
                   className={newnavv.studentPortalsidenavbar}
