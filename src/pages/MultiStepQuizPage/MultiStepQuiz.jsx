@@ -262,7 +262,9 @@ function MultiStepQuiz() {
             </div>
             <div className={styles.nextContainer}>
               {currentQuestionIndex === questions.length ? (
-                <button type="submit" className={styles.submitButton}>
+                <button type="submit" className={styles.submitButton}
+                  onClick={() => window.location.href = 'https://tangerine-pika-864a78.netlify.app'}
+                >
                   Submit
                 </button>
               ) : (
