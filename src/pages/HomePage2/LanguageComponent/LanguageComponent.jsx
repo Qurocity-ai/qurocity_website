@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./LanguageComponent.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const languages = [
   {
     name: "English",
@@ -42,11 +42,12 @@ const languages = [
 const LanguageComponent = () => {
   const [hoveredLanguage, setHoveredLanguage] = useState("");
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate(`/details`);
-  }
+    <a href="https://tangerine-pika-864a78.netlify.app/login"/>
+  };
+
 
 
 

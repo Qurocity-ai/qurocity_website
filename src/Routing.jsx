@@ -64,7 +64,7 @@ export default (
 {/* {/* we are addomg new Homepag} */} 
  
        <Route index element={<HomePage2/>}/>
-        <Route path='/details' element={<MultiStepQuiz/>}/>
+        {/* <Route path='/details' element={<MultiStepQuiz/>}/> */}
         {/* <Route index element={<Newcover/>} /> */}
         <Route path="/one-on-one-session" element={<OneSession/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
