@@ -152,15 +152,26 @@ function MultiStepQuiz() {
       },
       body: JSON.stringify(payload),
     })
-      .then((response) => response.json())
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
+        console.log("Response Data:", data);
+     
         if (data.token) {
-          localStorage.setItem("token", data.token);
-          navigate("/thankyou");
+          setSuccessMessage("Your responses have been stored successfully!");
+          localStorage.setItem("authToken", data.token); // Store token if needed
         } else {
-          console.log("Token not recevied", data)
+          throw new Error("Token not received in response!");
         }
       })
+      .catch((error) => {
+        console.error("Fetch Error:", error.message);
+      });
+ 
   };
 
   return (
@@ -262,8 +273,11 @@ function MultiStepQuiz() {
             </div>
             <div className={styles.nextContainer}>
               {currentQuestionIndex === questions.length ? (
-                <button type="submit" className={styles.submitButton}>
+                <button type="submit" className={styles.submitButton}
+                   onClick={() => window.location.href = 'https://tangerine-pika-864a78.netlify.app'}
+                   >
                   Submit
+                  
                 </button>
               ) : (
                 <button

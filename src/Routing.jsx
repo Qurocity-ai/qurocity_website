@@ -52,7 +52,7 @@ import NotFoundDev from './pages/NotFound/NotFoundDev';
 import InquiryForm from './pages/InquiryForm/InquiryForm';
 import OneSession from './pages/OneSession/OneSession';
 import ReviewSession from './components/ReviewSession/ReviewSession';
-import Thankyou from './pages/Thankyou/Thankyou';
+// import Thankyou from './pages/Thankyou/Thankyou';
 import DownloadMarkettingLeads from './pages/DownloadMarkettingLeads/DownloadMarkettingLeads';
 import HomePage2 from './pages/HomePage2/HomePage2';
 import MultiStepQuiz from './pages/MultiStepQuizPage/MultiStepQuiz';
@@ -123,7 +123,7 @@ export default (
 
         <Route path="*" element={<NotFound />} />
         <Route path="/underDevelopment" element={<NotFoundDev />} />
-        <Route path="/thankyou" element={<Thankyou />} />
+        {/* <Route path="/thankyou" element={<Thankyou />} /> */}
 
 
 
